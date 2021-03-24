@@ -1,6 +1,14 @@
 import datetime
 # from dateutil.relativedelta import relativedelta
 
+class SaveData(Post, Employee):
+    pass
+
+class ChkKnowledge:
+    pass
+
+class Briefing:
+    pass
 
 class Post:
     def __init__(self, title=None, date=None):
@@ -30,10 +38,13 @@ class Employee:
         self.surname = None
         self.second_name = None
         self.Post = Post()
-
+    
+    def save_changes(self):
+        pass
 
 def main():
     empl = Employee()
+    empl.Post.get_post_info()
     empl.Post.set_date_recevied('2020-01-21')
     empl.Post.set_title('spec')     # тут справочник вставляем
     empl.Post.get_post_info()
