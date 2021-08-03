@@ -31,7 +31,7 @@ def main():
     empl = Employee()
     input_curent_date = input(f'Дата когда была проверка знаний, если оставить пустым будет проставлена сегодняшняя дата {empl.date_today} ----> ')
     input_post_date = input('Дата вступления в должность ----> ')
-    
+
     date = empl.set_date_post(input_curent_date, input_post_date)
 
     print(date)
